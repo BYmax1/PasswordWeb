@@ -1,0 +1,56 @@
+extends layout
+
+block content
+   form.form-horizontal(method='post')
+     table.table.table-striped
+        thead
+        tbody
+         tr
+          td Characters
+          td 
+             input(type='checkbox',id='b1',checked) 
+             p A-Z
+             input(type='checkbox',id='b2',checked) 
+             p a-z
+             input(type='checkbox',id='b3',checked) 
+             p 0-9
+         tr
+          td Length
+          td 
+             input(type='text',id='lenth',value='16')
+         tr
+          td result
+          td  
+             input(type='text',id='result',name='password')
+         tr
+          td Place to use
+          td  
+             input(type='text',name='place')
+         tr
+          td Account
+          td 
+              input(type='text',name='account',id='ac')
+         tr     
+          td 
+          td 
+                input(type='radio',name='usual',id='r1') 
+                p qq 
+                input(type='radio',name='usual',id='r2')
+                p email
+                input(type='radio',name='usual',id='r3')
+                p phone 
+                input(type='radio',name='usual',id='r4')
+                p 163 
+
+     button.btn.btn-success(type='button',onclick='generate()') generate      
+     input.btn.btn-primary(type='submit',value='submit')
+     button.btn.btn-primary(type='button',onclick="window.location.href='./all'") view
+        
+     
+
+      
+         
+     
+
+
+

@@ -1,0 +1,19 @@
+extends layout
+
+block content
+      each info in Infos
+        table.table.table-striped
+          thead
+          tbody
+            tr
+              td place
+              td #{info.place}
+            tr
+              td account
+              td #{info.account}
+            tr
+              td password
+              td #{info.password}
+
+
+              
